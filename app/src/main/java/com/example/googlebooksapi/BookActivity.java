@@ -24,9 +24,9 @@ public class BookActivity extends AppCompatActivity {
 
         ArrayList<Book> books = new ArrayList<Book>();
 
-        books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
-        books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
-        books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
+        books.add(new Book("Bio", "Juni", "Ryk Tech Studio"));
+        books.add(new Book("Physics", "Juni", "Ryk Tech Studio"));
+        books.add(new Book("Chemistry", "Juni", "Ryk Tech Studio"));
         books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
         books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
         books.add(new Book("Boi", "Juni", "Ryk Tech Studio"));
