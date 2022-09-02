@@ -52,6 +52,10 @@ class QueryUtils {
 
             JSONObject volumeInfo = currentBook.getJSONObject("volumeInfo");
 
+            JSONArray authorsArray = volumeInfo.getJSONArray("authors");
+
+            String author = authorsArray.toString(0);
+
             String title = volumeInfo.getString("title");
             String publisher = volumeInfo.getString("publisher");
             String publishedDate = volumeInfo.getString("publishedDate");

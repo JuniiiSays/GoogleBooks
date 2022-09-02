@@ -9,7 +9,6 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:maxLines="2"
         android:text="@string/book_name"
         android:textSize="16sp"/>
     <TextView
@@ -19,12 +18,12 @@
         android:layout_height="match_parent"
         android:text="@string/author_name"
         android:textSize="16sp"/>
-    <TextView
+    <!--<TextView
         android:id="@+id/book_publisher_text_view"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:text="@string/publisher_name"
-        android:textSize="16sp"/>
+        android:textSize="16sp"/>-->
 
 </LinearLayout>
