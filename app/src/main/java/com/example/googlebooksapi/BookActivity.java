@@ -13,6 +13,8 @@ import java.util.List;
 
 public class BookActivity extends AppCompatActivity {
 
+    public static final String QUERY_URL = "https://www.googleapis.com/books/v1/volumes?q=android&maxResults=1";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
