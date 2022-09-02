@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Google Books Api</string>
+    <string name="search_books">Search Books…</string>
+    <string name="search">Search</string>
+    <string name="book_name">Book Name</string>
+    <string name="author_name">Author Name</string>
+    <string name="publisher_name">Publisher Name</string>
+</resources>
