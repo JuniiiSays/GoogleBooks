@@ -30,7 +30,8 @@
         android:id="@+id/list"
         android:layout_below="@+id/search_view_linearlayout"
         android:orientation="vertical"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

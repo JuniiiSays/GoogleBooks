@@ -25,7 +25,19 @@ class QueryUtils {
    public QueryUtils() {
    }
 
-   public static List<Book> extractFeatureFromJson(String bookJSON){
+   public static List<Book> fetchBooksData(String requestUrl){
+      URL url = createUrl(requestUrl);
+      String jsonResponse = null;
+      try {
+         jsonResponse = makeHttpRequest(url);
+      } catch (IOException e){
+         Log.e(LOG_TAG, "Problem Making Http Request", e);
+      }
+      List<Book> books = extractItemsFromJson(jsonResponse);
+      return books;
+   }
+
+   public static List<Book> extractItemsFromJson(String bookJSON){
       if (TextUtils.isEmpty(bookJSON)){
          return null;
       }
@@ -38,9 +50,11 @@ class QueryUtils {
          for (int i = 0; i <= itemsArray.length(); i++){
             JSONObject currentBook = itemsArray.getJSONObject(i);
 
-            String title = currentBook.getString("title");
-            String publisher = currentBook.getString("publisher");
-            String publishedDate = currentBook.getString("publishedDate");
+            JSONObject volumeInfo = currentBook.getJSONObject("volumeInfo");
+
+            String title = volumeInfo.getString("title");
+            String publisher = volumeInfo.getString("publisher");
+            String publishedDate = volumeInfo.getString("publishedDate");
 
             Book book = new Book(title, publisher, publishedDate);
             books.add(book);
