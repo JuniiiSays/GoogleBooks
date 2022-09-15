@@ -1,5 +1,5 @@
 # GoogleBooks
-This app shows a list of Books using the google books API on a given topic.
+This app shows a list of Different Books using the Google Books API on a given topic.
 
 
 How to use this repository
